@@ -1,9 +1,13 @@
 # WebLibrary
 Simple CRUD WebLibrary on PHP
 
-![](ImagesForReadMe\Library_Author.png)
+<img src="ImagesForReadMe\Library_Author.png"/>
 
-![](ImagesForReadMe\Library_Authors.png)
+<img src="ImagesForReadMe\Library_Authors.png"/>
+
+<img src="ImagesForReadMe\Library_Book.png"/>
+
+<img src="ImagesForReadMe\Library_Books.png"/>
 
 ![](ImagesForReadMe\Library_Book.png)
 
