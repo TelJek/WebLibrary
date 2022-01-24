@@ -1,0 +1,40 @@
+
+<main>
+    <div id="error-block" tpl-if="$error">
+        <tpl id='error-block'>{{ $error }}!</tpl>
+    </div>
+    <form id="input-form" action="HomeProject/author-add-form.php" method="post">
+        <div class="label-cell"><label for="firstName">Eesnimi:</label></div>
+        <tpl tpl-if="$firstName">
+            <div class="input-cell"><input id="firstName" name="firstName" type="text" value="{{ $firstName }}"></div>
+        </tpl>
+        <tpl tpl-if="!$firstName">
+            <div class="input-cell"><input id="firstName" name="firstName" type="text"></div>
+        </tpl>
+        <div class="flex-break"></div>
+        <div class="label-cell"><label for="lastName">Perekonnanimi:</label></div>
+        <tpl tpl-if="$lastName">
+            <div class="input-cell"><input id="lastName" name="lastName" type="text" value="{{ $lastName }}"></div>
+        </tpl>
+        <tpl tpl-if="!$lastName">
+            <div class="input-cell"><input id="lastName" name="lastName" type="text"></div>
+        </tpl>
+        <div class="flex-break"></div>
+        <div class="label-cell">Hinne:</div>
+        <div class="input-cell">
+            <tpl tpl-foreach="range(1, 5) as $grade">
+                <label for="grade{{ $grade }}">{{ $grade }}</label>
+                <input type="radio"
+                       id="grade{{ $grade }}"
+                       name="grade"
+                       tpl-checked="$grade == $bookGrade"
+                       value="{{ $grade }}">
+            </tpl>
+        </div>
+        <div class="flex-break"></div>
+        <div class="label-cell"></div>
+        <div class="input-cell button-cell">
+            <input name="submitButton" type="submit" value="Salvesta">
+        </div>
+    </form>
+</main>
