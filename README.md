@@ -8,7 +8,3 @@ Simple CRUD WebLibrary on PHP
 <img src="ImagesForReadMe\Library_Book.png"/>
 
 <img src="ImagesForReadMe\Library_Books.png"/>
-
-![](ImagesForReadMe\Library_Book.png)
-
-![](ImagesForReadMe\Library_Books.png)
